@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Sizing</title>
+    <link rel="stylesheet" href="./7.Flex-Sizing2.css" />
+</head>
+
+<body>
+    <h1><u>Flex-sizing</u></h1>
+    <p>The <span class="title">Flex-Sizing</span> makes it possible to create flexible layouts that
+        fully adapt to the screen.</p>
+    <p>If you set up everything correctly you won't have to rely on media queries to support different viewports,
+        layouts, and orientations. </p>
+    <p>This property determines the resizing behavior of flex children across viewport sizes. They can shrink,
+        grow, or remain static.</p>
+
+    <h2><u>Filling up Free Space</u></h2>
+    <p>One of the most challenging aspects of writing CSS is figuring out how to allocate the free space that remains
+        on the screen after the page has been populated with content.</p>
+    <p> At some viewport sizes, you'll often find there's too much remaining space and you want to fill it with
+        something. </p>
+
+    <p> At other viewport sizes, you might find there's not enough space, and the layout breaks in one way or another.
+    </p>
+    <hr>
+
+    <h2><u>flex-basis</u></h2>
+    <p>It specifies the <b>initial length</b> of a flexible item.</p>
+    <p>It specifies how flex items should behave when there's <i>exactly as much space as needed</i>.</p>
+    <p>The default value of flex-basis is <b>auto</b>, which means that the size of the flex items is calculated using
+        either the width or height of the element (depending on if it’s a row-based or column-based layout). </p>
+    <p> when the value of flex-basis is something other than auto, it overrides the value of width (or height in case of
+        vertical layouts). </p>
+    <br>
+    <h3>1.flex-basis: auto</h3>
+    <br>
+    <section class="row flex-basis-auto">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+    <br>
+    <br>
+    <h3>2.flex-basis: 400px</h3>
+    <br>
+    <section class="row flex-basis">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+    <br>
+    <br>
+    <hr>
+
+    <h2><u>flex-grow</u></h2>
+    <p>It specifies how much the item will <b>grow</b> relative to the rest of the flexible items inside the same
+        container.</p>
+    <p> how flex items should behave when there's a <i>surplus of free space</i> (how they should grow).</p>
+    <p>defines how any extra space in-between flex items should be allocated on the screen.</p>
+    <p> flex-grow doesn't divide up the entire flex container, only the space that remains after the browser renders all
+        flex items. <br>If there's no surplus of space, flex-grow has no effect.</p>
+    <br>
+
+    <h3>flex-grow: 0</h3>
+    <br>
+    <section class="row flex-grow0">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+
+    <br>
+    <br>
+
+    <h2>flex-grow: 1</h2>
+    <br>
+    <section class="row flex-grow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+
+    <hr>
+
+    <h2><u>flex-shrink</u></h2>
+
+    <br>
+
+    <h3>flex-shrink: 0</h3>
+    <br>
+    <section class="row flex-shrink0">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+
+    <br>
+    <br>
+
+    <h2>flex-shrink: 1</h2>
+    <br>
+    <section class="row flex-shrink">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+
+
+</body>
+
+</html>

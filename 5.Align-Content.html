@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self</title>
+    <link rel="stylesheet" href="./5.Align-Content2 copy.css">
+</head>
+
+<body>
+    <h1>align-content</h1>
+    <p>
+        The <strong>align-content</strong> property sets the distribution of space between and around content items
+        along a flexbox's cross-axis or a grid's block axis.
+        <br> <br>
+        The <strong>align-content</strong> property specifies how flex lines are distributed along the cross axis in
+        a flexbox
+        container.
+        <br> <br>
+        <b>Tip: </b>Use the justify-content property to align the items on the main axis (horizontally).
+        <br> <br>
+        <strong>Note: </strong>The align-content property can also be used on a grid container to align grid items in
+        the block direction. <br>For pages in English, block direction is downward and inline direction is left to
+        right.
+        <br>
+    </p>
+    <hr>
+
+
+    <h2>Row</h2>
+    <h2>align-content: flex-start</h2>
+    <p>Lines are packed toward the start of the flex container. </p>
+    <p> The items are packed flush to each other against the edge of the alignment container depending on the flex
+        container's cross-start side.</p>
+    <p> This only applies to flex layout items. For items that are not children of a flex
+        container, this value is treated like start.</p>
+
+    <section class="row flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <br>
+    <h2>align-content: flex-end</h2>
+    <p>Lines are packed toward the end of the flex container.</p>
+    <p>The items are packed flush to each other against the edge of the alignment container depending on the flex
+        container's cross-end side. </p>
+    <p>This only applies to flex layout items. For items that are not children of a flex container, this value is
+        treated like end.</p>
+    <section class="row flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <br>
+    <h2>align-content: center</h2>
+    <p>Lines are packed toward the center of the flex container.</p>
+    <p>The items are packed flush to each other in the center of the alignment container along the cross axis.</p>
+    <section class="row center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+
+    <br>
+    <br>
+
+    <h2>align-content: space-between</h2>
+    <p>Lines are evenly distributed in the flex container.</p>
+    <p>The items are evenly distributed within the alignment container along the cross axis. The spacing between each
+        pair of adjacent items is the same. </p>
+    <p>The first item is flush with the start edge of the alignment container in
+        the cross axis, and the last item is flush with the end edge of the alignment container in the cross axis.</p>
+    <section class="row space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+    <br>
+    <br>
+    <h2>align-content: space-around</h2>
+    <p>Lines are evenly distributed in the flex container, with half-size spaces on either end.</p>
+    <p>The items are evenly distributed within the alignment container along the cross axis.</p>
+    <p>The spacing between each pair of adjacent items is the same.</p>
+    <p>The empty space before the first and after the last item equals half of the space between each pair of adjacent
+        items.</p>
+    <section class="row space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <br>
+    <h2>align-content: space-evenly</h2>
+    <p>Lines are evenly distributed in the flex container, with equal space around them.</p>
+    <p>The items are evenly distributed within the alignment container along the cross axis.</p>
+    <p>The spacing between each pair of adjacent items, the start edge and the first item, and the end edge and the last
+        item, are all exactly the same.</p>
+    <section class="row space-evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <hr>
+
+    <!-- column -->
+    <h2>Column</h2>
+    <h2>align-content: flex-start</h2>
+    <p>Items are positioned at the start of the container.
+    </p>
+    <section class="column column-flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+
+    <h2>align-content: flex-end</h2>
+    <p>Items are positioned at the end of the container.</p>
+    <section class="column column-flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+    <h2>align-content: center</h2>
+    <p>Items/Lines are packed toward the center of the flex container.</p>
+    <section class="column column-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+
+    <h2>align-content: space-between</h2>
+    <p>Lines are evenly distributed in the flex container.</p>
+    <p>The items are evenly distributed within the alignment container along the cross axis. The spacing between each
+        pair of adjacent items is the same. </p>
+    <p>The first item is flush with the start edge of the alignment container in
+        the cross axis, and the last item is flush with the end edge of the alignment container in the cross axis.</p>
+    <section class="column column-space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <br>
+    <h2>align-content: space-around</h2>
+    <p>Lines are evenly distributed in the flex container, with half-size spaces on either end.</p>
+    <p>The items are evenly distributed within the alignment container along the cross axis.</p>
+    <p>The spacing between each pair of adjacent items is the same.</p>
+    <p>The empty space before the first and after the last item equals half of the space between each pair of adjacent
+        items.</p>
+    <section class="column column-space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+    <br>
+    <h2>align-content: space-evenly</h2>
+    <p>Lines are evenly distributed in the flex container, with equal space around them.</p>
+    <p>The items are evenly distributed within the alignment container along the cross axis.</p>
+    <p>The spacing between each pair of adjacent items, the start edge and the first item, and the end edge and the last
+        item, are all exactly the same.</p>
+    <section class="column column-space-evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+    <!-- column -->
+
+</body>
+
+</html>

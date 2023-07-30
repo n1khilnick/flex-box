@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self</title>
+    <link rel="stylesheet" href="./6.Align-Self2.css">
+</head>
+
+<body>
+
+    <h1>align-self</h1>
+    <p>The <b>align-self</b> property overrides a grid or flex item's align-items value. </p>
+
+    <p>The <b>align-self</b> specifies the alignment in the block direction for the selected item inside a flexbox or
+        grid container. </p>
+
+    <ul>
+        <li>In <b>Flexbox</b>, it aligns the item on the <b>cross axis</b>.</li>
+        <li>In <b>Grid</b>, it aligns the item inside the <b>grid area</b>.</li>
+    </ul>
+
+    <p><b>Tip: </b>To align a grid item in the inline direction instead of the block direction, use
+        <b><u>justify-self</u></b> or <b><u>justify-items</u></b> properties.
+    </p>
+
+    <p><b>Note: </b>The property doesn't apply to block-level boxes, or to table cells.<br>&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; If a flexbox item's cross-axis margin is <b><u>auto</u></b>, then <b>align-self</b> is ignored. </p>
+
+    <hr>
+
+
+    <h2>Row</h2>
+    <h2>align-self: flex-start</h2>
+    <p>The element is positioned at the beginning of the container </p>
+    <p>The cross-start margin edge of the flex item is flushed with the cross-start edge of the line.</p>
+
+    <section class="row flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+
+    <br>
+    <br>
+
+    <h2>align-self: flex-end</h2>
+    <p>The element is positioned at the end of the container.</p>
+    <p>The cross-end margin edge of the flex item is flushed with the cross-end edge of the line.</p>
+    <section class="row flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <br>
+    <h2>align-self : center</h2>
+    <p>The element is positioned at the center of the container.</p>
+    <p>The flex item's margin box is centered within the line on the cross-axis. If the cross-size of the item is larger
+        than the flex container, it will overflow equally in both directions.</p>
+    <section class="row center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+
+    <br>
+    <br>
+
+    <hr>
+
+    <!-- column -->
+    <h2>Column</h2>
+    <h2>align-self: flex-start</h2>
+    <p>Items are positioned at the start of the container.
+    </p>
+    <section class="column column-flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+
+    <h2>align-self: flex-end</h2>
+    <p>Items are positioned at the end of the container.</p>
+    <section class="column column-flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+    <h2>align-self: center</h2>
+    <p>Items/Lines are packed toward the center of the flex container.</p>
+    <section class="column column-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+
+
+    <!-- column -->
+
+</body>
+
+</html>

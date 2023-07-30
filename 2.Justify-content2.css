@@ -1,0 +1,128 @@
+body {
+    background-color: #1B1B1B;
+    color: #fff;
+}
+
+section {
+    background-color: #F4F2DE;
+    border: 5px solid #071952;
+    margin: 0 auto;
+}
+
+.row {
+    height: 200px;
+    width: 100%;
+
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.row-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row-stretch {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+}
+
+
+.column {
+    background-color: #F5F5F5;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.column-box {
+    height: 500px;
+    width: 17.1%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-reverse-box {
+    height: 500px;
+    width: 17.1%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+section>div {
+    color: white;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+section :nth-of-type(1) {
+    background-color: #8C3333;
+}
+
+section :nth-of-type(2) {
+    background-color: #A1CCD1
+}
+
+section :nth-of-type(3) {
+    background-color: #7C9D96
+}
+
+section :nth-of-type(4) {
+    background-color: #E9B384;
+}
+
+section :nth-of-type(5) {
+    background-color: #557A46;
+}
+
+.text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 22%;
+}
+
+/* p {
+    font-size: 1.2em;
+} */
+
+div {
+    font-size: 1.4em;
+}
+
+h2 {
+    text-align: left;
+    /* background-color: #A1CCD1; */
+}

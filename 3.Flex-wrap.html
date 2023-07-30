@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-wrap</title>
+    <link rel="stylesheet" href="3.Flex-wrap2.css">
+</head>
+
+<body>
+    <h1>flex-wrap</h1>
+    <p>
+        The <strong>flex-wrap </strong>CSS property sets whether flex items are forced onto one line or can wrap onto
+        multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
+        <br> <br>
+        In other words, The flex-wrap property specifies whether the flexible items should wrap or not.
+        <br> <br>
+        <strong>Note: </strong>If the elements are not flexible items, the flex-wrap property has no effect.
+    </p>
+    <hr>
+
+    <h2>flex-wrap: nowrap</h2>
+    <p>Default value. Specifies that the flexible items will not wrap.</p>
+    <section class="row no-wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>flex-wrap: wrap
+        <br>with flex-direction: column
+    </h2>
+    <p>Specifies that the flexible items will wrap if necessary.<br>
+        The flex items break into multiple lines. <br>The cross-start is either equivalent to start or before depending
+        flex-direction value and the cross-end is the opposite of the specified cross-start. </p>
+    <section class="row wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+
+    <h2>flex-wrap: wrap-reverse<br>
+        with flex-direction: column;
+    </h2>
+    <p>Specifies that the flexible items will wrap, if necessary, in reverse order<br>
+        Behaves the same as wrap but cross-start and cross-end are permuted.</p>
+    <section class="row wrap-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <!-- <h2>justify-content: center</h2>
+    <p>Items are positioned in the center of the container</p>
+    <section class="row flex-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>justify-content: space-between</h2>
+    <p>Items will have space between them<br>
+        The first item is flush with the start,the last is flush with the end.</p>
+    <section class="row row-space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>justify-content: space-around;</h2>
+    <p>Items will have space before, between, and after them<br>
+        Start and end gaps are half the size of the space between each item.
+    </p>
+    <section class="row row-space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>justify-content: space-evenly</h2>
+    <p>Items will have equal space around them <br>
+        Start, in-between, and end gaps have equal sizes</p>
+    <section class="row row-space-evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>justify-content: stretch</h2>
+    <p>Distribute items evenly.<br>
+        Stretch 'auto'-sized items to fit the container.</p>
+    <section class="row row-stretch">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <link rel="stylesheet" href="./4.Align-Items2.css">
+</head>
+
+<body>
+    <h1>align-items</h1>
+    <p>
+        The <strong>align-items</strong> property specifies the default alignment for items inside a flexbox or grid
+        container.
+    <ul>
+        <li>In a flexbox container, the flexbox items are aligned on the cross axis, which is vertical by default
+            (opposite of flex-direction).</li>
+        <li>In a grid container, the grid items are aligned in the block direction. For pages in English, block
+            direction is downward and inline direction is left to right.</li>
+    </ul>
+    <strong>Note: </strong>For this property to have any alignment effect, the items need available space around
+    themselves in the appropriate direction. <br>
+    <strong>Tip: </strong>Use the align-self property of each item to override the align-items property.
+    </p>
+    <hr>
+
+    <h2>Row</h2>
+    <h2>align-item: normal</h2>
+    <p>Default. Behaves like 'stretch' for flexbox and grid items, or 'start' for grid items with a defined block size.
+    </p>
+    <section class="row normal">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section>
+    <br>
+    <h2>align-item: flex-start(top)</h2>
+    <p>Items are positioned at the beginning of the container.
+    </p>
+    <section class="row flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <br>
+    <h2>align-item: flex-end(bottom)</h2>
+    <p>Items are positioned at the end of the container.
+    </p>
+    <section class="row flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <br>
+    <h2>align-item: flex-end(opp. of bottom = top)
+        <br><span class="flex-end-wrap">with flex-wrap: wrap-reverse</span>
+    </h2>
+    <p>Items are positioned at the end of the container.
+    </p>
+    <section class="row flex-end-wrap-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <br>
+    <h2>align-item: center</h2>
+    <p>Items are positioned at the center of the container.
+    </p>
+    <section class="row center">
+        <div>1</div>
+        <div>2</div>
+        <div style="height: 200px; width: 200px;">3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <br>
+    <h2>align-items: baseline</h2>
+    <p>Items are positioned at the baseline of the container.
+    </p>
+    <section class="row baseline">
+        <div>1</div>
+        <div>2</div>
+        <div style="height: 200px; width: 200px; font-size: 6em;">3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <hr>
+
+    <!-- column -->
+    <h2>Column</h2>
+    <h2>align-item: flex-end</h2>
+    <p>Items are positioned at the center of the container.
+    </p>
+    <section class="column column-flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+
+    <h2>align-item: center</h2>
+    <p>Items are positioned at the center of the container.
+    </p>
+    <section class="column column-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+    <h2>align-item: center with wrap</h2>
+    <p>Items are positioned at the center of the container.
+    </p>
+    <section class="column column-center-wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+    <!-- column -->
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+body {
+    background-color: #1B1B1B;
+    color: #fff;
+}
+
+section {
+    background-color: #1B1B1B;
+    border: 5px solid #071952;
+    margin: 0 auto;
+}
+
+section>div {
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section :nth-of-type(1) {
+    background-color: #8C3333;
+}
+
+section :nth-of-type(2) {
+    background-color: #A1CCD1
+}
+
+section :nth-of-type(3) {
+    background-color: #7C9D96
+}
+
+section :nth-of-type(4) {
+    background-color: #E9B384;
+}
+
+section :nth-of-type(5) {
+    background-color: #557A46;
+}
+
+.text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 22%;
+}
+
+div {
+    font-size: 1.4em;
+}
+
+h2 {
+    text-align: left;
+    /* background-color: #A1CCD1; */
+}
+
+.row {
+    height: 300px;
+    width: 85%;
+
+}
+
+.flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.flex-start>div:nth-of-type(3) {
+    align-self: flex-start;
+}
+
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+
+.flex-end>div:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.center>div:nth-of-type(3) {
+    align-self: center;
+}
+
+
+
+.column {
+    background-color: #F5F5F5;
+    height: 500px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.column>div {
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.column-flex-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.column-flex-start>div:nth-of-type(3) {
+    align-self: flex-start;
+}
+
+.column-flex-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.column-flex-end>div:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.column-center>div:nth-of-type(3) {
+    align-self: center;
+}

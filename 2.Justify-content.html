@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <link rel="stylesheet" href="2.Justify-content2.css">
+</head>
+
+<body>
+    <h1>justify-content</h1>
+    <p>
+        The CSS <strong>justify-content</strong> property defines how the browser distributes space between and around
+        content items along the main-axis of a flex container, and the inline axis of a grid container.
+        <br> <br>
+        In other words, The justify-content property aligns the flexible container's items when the items do not use all
+        available space on the main-axis (horizontally).
+        <br> <br>
+        <strong>Tip: </strong> Use the align-items property to align the items vertically.
+        <br> <br>
+        <strong>Note: </strong>The justify-content property can also be used on a grid container to align grid items in
+        the inline direction. For pages in English, inline direction is left to right and block direction is downward.
+    </p>
+    <hr>
+
+    <h2>justify-content: flex-start(left)</h2>
+    <p>Default value. Items are positioned at the beginning of the container.</p>
+    <section class="row flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>justify-content: flex-end(right)</h2>
+    <p>Items are positioned at the end of the container.</p>
+    <section class="row flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>justify-content: center</h2>
+    <p>Items are positioned in the center of the container.</p>
+    <section class="row flex-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>justify-content: space-between</h2>
+    <p>Items will have space between them.<br>
+        The first item is flush with the start,the last is flush with the end.</p>
+    <section class="row row-space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>justify-content: space-around;</h2>
+    <p>Items will have space before, between, and after them.<br>
+        Start and end gaps are half the size of the space between each item.
+    </p>
+    <section class="row row-space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>justify-content: space-evenly</h2>
+    <p>Items will have equal space around them.<br>
+        Start, in-between, and end gaps have equal sizes.</p>
+    <section class="row row-space-evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+    <h2>justify-content: stretch</h2>
+    <p>Distribute items evenly.<br>
+        Stretch 'auto'-sized items to fit the container.</p>
+    <section class="row-stretch">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </section><br>
+
+
+</body>
+
+</html>
